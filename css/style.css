@@ -217,3 +217,86 @@ main {
     border: 1px solid #999999;
     border-radius: 29px;
 }
+
+/* features part */
+#features-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#features-box-2 {
+    grid-column: span 3;
+    display: grid;
+    justify-content: space-between;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.concern-face-box {
+    border: 1px solid #40dde3;
+    background-color: #40dde333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.concern-face {
+    width: 30px;
+    height: 30px;
+}
+
+.smile-face {
+    text-align: center;
+}
+
+.feature-card {
+    width: 100%;
+    max-width: 400px;
+    height: 360px;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card-2 {
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+.feature-card-2>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature-card-content {
+    text-align: start;
+    margin-top: 20px;
+}
+
+.feature-card-content>h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-card-content>p {
+    font-size: 14px;
+    color: #999999;
+}
+
+.feature-card-content>p>span {
+    font-weight: bold;
+}
