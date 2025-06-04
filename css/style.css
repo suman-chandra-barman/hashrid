@@ -219,7 +219,7 @@ main {
 }
 
 /* features part */
-#features-box {
+.features-box {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -299,4 +299,11 @@ main {
 
 .feature-card-content>p>span {
     font-weight: bold;
+}
+
+/* our partnars section  */
+.partner-card {
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 20px;
 }
