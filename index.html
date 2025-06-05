@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -254,8 +259,82 @@
             </div>
         </section>
         <!-- out partner section end  -->
+        <!-- faq section start  -->
+        <section id="faq">
+            <div class="faq-container">
+                <div class="title">
+                    <span>FAQ</span>
+                </div>
 
+                <div class="content-box">
+                    <p class="content">
+                        Get clarity on how Hashrid works, what you earn, and why this
+                        XP-powered protocol is the next step in Web3 social evolution.
+                        We’re building for creators, culture drivers, and crypto-native
+                        communities.
+                    </p>
+                    <section id="faq-section">
+                        <div class="faq-box">
+                            <div class="faq-column">
+                                <div class="faq-item active">
+                                    <div class="faq-question">
+                                        Do I need crypto to use Hashrid?
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-ans">
+                                        No. You can use Hashrid without any crypto. It’s designed to be
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        What makes Hashrid different from X, Reddit or Discord?
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-ans">Hashrid focuses on a "Proof of Meme" concept, rewarding users
+                                        for original, engaging meme content and actively participating in a curated meme
+                                        economy, unlike general social media platforms.</div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        What are NFT badges for? <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-ans">NFT badges serve as digital collectibles and recognition of a
+                                        user's achievements and contributions within the Hashrid ecosystem.</div>
+                                </div>
+                            </div>
 
+                            <div class="faq-column">
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        How is XP earned? <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-ans">XP is earned through creating and sharing memes, receiving
+                                        upvotes, engaging with content, and participating in platform activities.</div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        Is there a token involved?
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-ans">Yes, Hashrid has a native token.</div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        Can I really earn money from memes?
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-ans">
+                                        Yes, through the platform's reward system for popular memes and other
+                                        contributions, you can earn real value.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- faq section end  -->
     </main>
     <!-- footer start -->
     <footer id="footer">
@@ -273,7 +352,18 @@
         </div>
     </footer>
     <!-- foter end -->
-    <script src="js/script.js"></script>
+    <!-- js -->
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    if (i !== item) i.classList.remove('active');
+                });
+
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
