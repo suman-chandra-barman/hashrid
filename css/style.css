@@ -307,3 +307,30 @@ main {
     border-radius: 10px;
     padding: 20px;
 }
+
+/* footer part  */
+#footer {
+    margin-top: 10%;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-bottom: 12px;
+    font-family: "Orbitron", sans-serif;
+}
+
+#site-info {
+    display: flex;
+    justify-items: right;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: nowrap;
+}
+
+#social-icons {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: nowrap;
+}
