@@ -258,7 +258,7 @@ main {
 }
 
 #gray-part {
-    width: 1240px;
+    max-width: 1240px;
     height: 40px;
     background-color: #8c8c8c;
     margin: 0px auto;
@@ -309,6 +309,10 @@ main {
     border: 1px solid #404040;
     border-radius: 10px;
     padding: 20px;
+}
+
+.partner-card>img {
+    max-width: 300px;
 }
 
 /* faq part  */
@@ -453,6 +457,15 @@ main {
 }
 
 /* responsive part  */
+@media (max-width: 992px) {
+    #hero>div>h1 {
+        font-size: 50px;
+    }
+    .partner-card>img {
+        max-width: 200px;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         padding: 0px 10px;
@@ -508,12 +521,20 @@ main {
         gap: 10px;
     }
 
+    .card {
+        max-width: 100%;
+    }
+
     #card-box-2 {
         display: flex;
         flex-direction: column;
         gap: 10px;
         padding: 5px;
         max-width: 100%;
+    }
+
+    .partner-card>img {
+        max-width: 150px;
     }
 
     #subcription h1 {
