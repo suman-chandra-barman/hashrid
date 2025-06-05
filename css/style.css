@@ -387,6 +387,43 @@ main {
   color: #40dde3;
 }
 
+/* subcription part  */
+#subcription {
+  margin-top: 5%;
+  font-size: 28px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+#subcription-content {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 16px;
+}
+
+#subcription span {
+  font-size: 18px;
+}
+
+#subcription h1 {
+  margin-left: auto;
+  text-align: center;
+  font-weight: 600;
+  background: -webkit-linear-gradient(
+    92.12deg,
+    #292929 -2.37%,
+    #ffffff 27.47%,
+    #676767 51.64%,
+    #ffffff 70.68%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /* footer part  */
 #footer {
